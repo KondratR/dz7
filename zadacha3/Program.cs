@@ -44,10 +44,9 @@ void Srednee(int[,] matrix)
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
         sum = 0;
-        for (int i = 0; i < matrix.GetLength(0); i++)
-        {
-            
+        for (int i = 0; i < matrix.GetLength(0); i++)         
             sum += matrix[i, j];
+
             System.Console.Write(Math.Round((double)sum / matrix.GetLength(0), 1));
 
             if (j < matrix.GetLength(1) - 1)
@@ -60,7 +59,7 @@ void Srednee(int[,] matrix)
             }
         }
     }
-}
+
 int rows = ReadInt("Введите количество строк матрицы: ");
 int cols = ReadInt("Введите количество столбцов матрицы: ");
 System.Console.WriteLine();
